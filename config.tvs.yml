@@ -12,6 +12,7 @@
 ##########################
 
 applicationTitle: Television Simulator Public Beta # Optional. The title of the webpage; make it your own!
+
 scanlines: true # Optional. Scanlines are enabled by default but if you don't want them you can set this to false. On a real CRT it's best to disable these and shadow masks.
 shadowMask: aperture-grille # Optional. The default shadow mask to simulate a CRT screen. Values are slot-mask, dot-mask, or aperture-grille. To disable, set to false.
 noise: 0.15 # Optional. Default amount of picture noise to apply
@@ -30,8 +31,9 @@ border: placeholders/border.png # Optional. You can specify a repeating pattern 
 
 osd:
    theme: sat2007
-   primaryColor: orange
+   primaryColor: "#00FFFC"
 
+startUnmuted: true
 
 noSignalContent: # Optional. You can specify content to show when a channel is off the air.
   image: placeholders/no-signal.png
@@ -89,7 +91,7 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   abbr: FUCK
   feed-reader:
     src: https://tvseagate.github.io/cbt.rss
-    title: TVS Update News
+    title: shart
     refreshInterval: 300
     scrollSpeed: 35
     scrollDelay: 6
@@ -106,3 +108,14 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   abbr: WMAR
   title: Jimmy Kimmel Live
   video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/WMAR_20110605_230000_Jimmy_Kimmel_Live.mp4
+
+- number: 8
+  name: EAS
+  abbr: EAS
+  title: Current EAS Alerts
+  feed-reader:
+    src: https://api.weather.gov/alerts/active.atom?zone=OHZ070
+    title: Current EAS Alerts
+    refreshInterval: 300
+    scrollSpeed: 35
+    scrollDelay: 6
