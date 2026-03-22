@@ -64,13 +64,6 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
     scrollDelay: 6
 
 - number: 4
-  name: Movie Previews
-  abbr: PREV
-  title: Sneak Prevue
-  description: Preview the hottest movies on Pay-Per-View and On Demand!
-  video: https://archive.org/download/capture-a-6776/CaptureA_6776.mp4
-
-- number: 4
   name: Guide 1989 custom colors example
   noiseBlendMode: multiply
   guide:
@@ -103,7 +96,7 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
         centerText: "Pickle Jackpot"
         volume: false
 
-- number: 3
+- number: 7
   name: oh fuck
   abbr: FUCK
   feed-reader:
@@ -112,3 +105,10 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
     refreshInterval: 300
     scrollSpeed: 35
     scrollDelay: 6
+
+- number: 8f
+  name: Movie Previews
+  abbr: PREV
+  title: Sneak Prevue
+  description: Preview the hottest movies on Pay-Per-View and On Demand!
+  video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/KCNS_20130309_060000_Noticias_MundoFox.mp4
