@@ -41,10 +41,14 @@ defaultChannel: 2 # Required. The default channel to start on when visiting the 
 channels: # starts a list of channels. Every channel below begins with a "-" as that lets YAML know we're defining a list.
 
 - number: 1
-  name: On Demand
-  abbr: ON
-  image: p/ogplankussy.png
-  backgroundAudio: placeholders/bgm-2.mp3
+  name: plankussy
+  abbr: PLSY
+  pip:
+  a:
+    image: p/ogplankussy.png
+  b:
+    image: p/fih.png
+  backgroundAudio: https://dn710204.ca.archive.org/0/items/SUPERCELL_Clash-of-Clans-Soundtrack-2023/Clash%20of%20Clans/AudioOnly/Halloween-Music/Compilation/OGG/Home_music_BuilderBase_Part_1-2_Halloween.mp3
 
 - number: 2
   name: what the sigma
@@ -77,14 +81,8 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
         text: |
           Plankussy... throbbing...
 
-- number: 5
-  name: STB
-  abbr: WHAR
-  iframe:
-    src: https://stb-gaming.github.io/tv-guide/ # You can define the content of the loop using the content property. This is a 
-    allowInteraction: true
 
-- number: 6
+- number: 5
   name: oh fuck
   abbr: FUCK
   feed-reader:
@@ -94,9 +92,15 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
     scrollSpeed: 35
     scrollDelay: 6
 
-- number: 7
-  name: Movie Previews
-  abbr: PREV
-  title: Sneak Prevue
+- number: 6
+  name: KCNS_20130309_060000_Noticias_MundoFox.mp4
+  abbr: KCNS
+  title: Noticias MundoFox
   description: Preview the hottest movies on Pay-Per-View and On Demand!
   video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/KCNS_20130309_060000_Noticias_MundoFox.mp4
+
+- number: 6
+  name: WMAR_20110605_230000_Jimmy_Kimmel_Live.mp4
+  abbr: WMAR
+  title: Jimmy Kimmel Live
+  video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/WMAR_20110605_230000_Jimmy_Kimmel_Live.mp4
