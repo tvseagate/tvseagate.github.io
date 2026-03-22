@@ -101,7 +101,7 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   description: Preview the hottest movies on Pay-Per-View and On Demand!
   video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/KCNS_20130309_060000_Noticias_MundoFox.mp4
 
-- number: 6
+- number: 7
   name: WMAR_20110605_230000_Jimmy_Kimmel_Live.mp4
   abbr: WMAR
   title: Jimmy Kimmel Live
