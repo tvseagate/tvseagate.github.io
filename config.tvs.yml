@@ -85,18 +85,6 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
     allowInteraction: true
 
 - number: 6
-  name: Pickle Jackpot
-  abbr: PKL
-  daily-schedule:
-    - startTime: "09:00"
-      endTime: "20:00"
-      keno:
-        drawingMinutes: 10
-        drawIntervalMs: 600
-        centerText: "Pickle Jackpot"
-        volume: false
-
-- number: 7
   name: oh fuck
   abbr: FUCK
   feed-reader:
@@ -106,7 +94,7 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
     scrollSpeed: 35
     scrollDelay: 6
 
-- number: 8f
+- number: 7
   name: Movie Previews
   abbr: PREV
   title: Sneak Prevue
