@@ -36,13 +36,14 @@ osd:
 noSignalContent: # Optional. You can specify content to show when a channel is off the air.
   image: placeholders/no-signal.png
 
-defaultChannel: 2 # Required. The default channel to start on when visiting the page.
+defaultChannel: 1 # Required. The default channel to start on when visiting the page.
 
 channels: # starts a list of channels. Every channel below begins with a "-" as that lets YAML know we're defining a list.
 
 - number: 1
   name: plankussy
   abbr: PLSY
+  icon: https://file.garden/aUYIWVAKvQxCBY-_/database/images/fishmcbitesapp.jpeg
   pip:
   a:
     image: p/ogplankussy.png
@@ -53,6 +54,7 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
 - number: 2
   name: what the sigma
   abbr: SEP
+  description: INCREDIBOX KATS DETECTED!!!! OwO thats grilled chicken
   youtube-playlist:
     src: PLpKW54fMiMFxdGQSefzMAO3r3xt3IOIry
     shuffle: true
