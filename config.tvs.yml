@@ -45,9 +45,9 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   abbr: PLSY
   icon: https://file.garden/aUYIWVAKvQxCBY-_/database/images/fishmcbitesapp.jpeg
   pip:
-  a:
+   a:
     image: p/ogplankussy.png
-  b:
+   b:
     image: p/fih.png
   backgroundAudio: https://dn710204.ca.archive.org/0/items/SUPERCELL_Clash-of-Clans-Soundtrack-2023/Clash%20of%20Clans/AudioOnly/Halloween-Music/Compilation/OGG/Home_music_BuilderBase_Part_1-2_Halloween.mp3
 
