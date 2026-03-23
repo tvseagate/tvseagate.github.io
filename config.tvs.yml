@@ -119,3 +119,9 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
     refreshInterval: 300
     scrollSpeed: 35
     scrollDelay: 6
+
+- number: 9
+  name: Customer Information
+  title: The new FiOS TV is here!
+  abbr: CTF
+  video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/new-fios.mp4
