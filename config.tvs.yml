@@ -11,29 +11,26 @@
 # These options control the picture and the window.
 ##########################
 
-applicationTitle: Television Simulator Public Beta # Optional. The title of the webpage; make it your own!
+applicationTitle: Television Seagate
 
-scanlines: true # Optional. Scanlines are enabled by default but if you don't want them you can set this to false. On a real CRT it's best to disable these and shadow masks.
-shadowMask: aperture-grille # Optional. The default shadow mask to simulate a CRT screen. Values are slot-mask, dot-mask, or aperture-grille. To disable, set to false.
-noise: 0.15 # Optional. Default amount of picture noise to apply
-blur: 1 # Optional. Default amount of blur to apply to the picture; set to false to disable
-bezel: flat # Optional. You can specify a bezel image to go around the outside of the screen. Values are none, cylindrical or flat.
+scanlines: true 
+shadowMask: aperture-grille 
+noise: 0.15
+blur: 1
+bezel: flat 
 animateChannelChange: false
 changeChannelNoise: false
-border: placeholders/border.png # Optional. You can specify a repeating pattern a background image around the outside of the screen
-# warmup: false # Optional. By default the TV will warm up and cool down when you power it on and off. If you want to disable this set to false. If set to a number, it will be the duration of the warmup in seconds.
-
-# Uncomment the lines below to use the digital cable box theme instead of the default on-screen displays
-# osd:
-#   theme: digital
-#   primaryColor: "#00FFFC"
-#   accentColor: "#F600FF"
+border: placeholders/border.png
 
 osd:
    theme: sat2007
    primaryColor: "#00FFFC"
 
 startUnmuted: true
+
+dimensions:
+  screenWidth: 800
+  screenHeight: 600
 
 noSignalContent: # Optional. You can specify content to show when a channel is off the air.
   image: placeholders/no-signal.png
@@ -125,3 +122,13 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   title: The new FiOS TV is here!
   abbr: CTF
   video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/new-fios.mp4
+
+- number: 9
+  name: Boomerang
+  abbr: BOOM
+  icon: https://file.garden/aUYIWVAKvQxCBY-_/channels/dtv-2015/217Boomerang.png
+  loop:
+  - video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/molamolaguayguay.mp4
+  - video: placeholders/tvs-loop.mp4
+    duration: 10
+  - video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/nexus10.mp4
