@@ -121,10 +121,28 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   name: Customer Information
   title: The new FiOS TV is here!
   abbr: CTF
+  backgroundAudio: https://file.garden/aUYIWVAKvQxCBY-_/database/music/Quant5%20extended%20-%20UK%20Garage.mp3
   video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/new-fios.mp4
 
 - number: 10
   name: Now Playing
   abbr: ITV
+  backgroundAudio: http://radio.plaza.one/mp3
+  backgroundAudioOptions:
+    description: Nightwave Plaza Radio # Optional. Credits will appear in the Info OSD
+    nowPlayingUrl: https://api.plaza.one/status
+    nowPlayingProvider: plaza-one # Required if using nowPlayingUrl. Only a few providers are supported right now; see the documentation for more info.
   iframe:
    src: https://ourworldoftext.com/nowplaying
+  
+- number: 10
+  name: Our World Of Text
+  title: OWOT Spawn
+  abbr: OWOT
+  backgroundAudio: http://radio.plaza.one/mp3
+  backgroundAudioOptions:
+    description: Nightwave Plaza Radio # Optional. Credits will appear in the Info OSD
+    nowPlayingUrl: https://api.plaza.one/status
+    nowPlayingProvider: plaza-one 
+  iframe:
+   src: https://ourworldoftext.com/
