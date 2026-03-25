@@ -124,11 +124,7 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/new-fios.mp4
 
 - number: 10
-  name: Boomerang
-  abbr: BOOM
-  icon: https://file.garden/aUYIWVAKvQxCBY-_/channels/dtv-2015/217Boomerang.png
-  loop:
-  - video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/molamolaguayguay.mp4
-  - video: placeholders/tvs-loop.mp4
-    duration: 10
-  - video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/nexus10.mp4
+  name: Now Playing
+  abbr: ITV
+  iframe:
+   src: https://ourworldoftext.com/nowplaying
