@@ -129,7 +129,6 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   abbr: ITV
   backgroundAudio: http://radio.plaza.one/mp3
   backgroundAudioOptions:
-    description: Nightwave Plaza Radio # Optional. Credits will appear in the Info OSD
     nowPlayingUrl: https://api.plaza.one/status
     nowPlayingProvider: plaza-one # Required if using nowPlayingUrl. Only a few providers are supported right now; see the documentation for more info.
   iframe:
@@ -141,7 +140,6 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   abbr: OWOT
   backgroundAudio: http://radio.plaza.one/mp3
   backgroundAudioOptions:
-    description: Nightwave Plaza Radio # Optional. Credits will appear in the Info OSD
     nowPlayingUrl: https://api.plaza.one/status
     nowPlayingProvider: plaza-one 
   iframe:
