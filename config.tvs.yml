@@ -22,9 +22,18 @@ animateChannelChange: false
 changeChannelNoise: false
 border: placeholders/border.png
 
+#osd:
+#   theme: sat2007
+#   primaryColor: "#00FFFC"
+
 osd:
-   theme: sat2007
-   primaryColor: "#00FFFC"
+  theme: sat1992 # 1990's analog C-band satellite receiver theme
+  themeOptions:
+    # showChannelInterference: false # by default, we display overlays of
+    satellite: TV1 # the default satellite for all channels to be on. If unset, only channels with a satellite option set will display one.
+    satellites: # you can define a list of different satellites; they'll be a letter and number combination followed by a 4-digit number representing the location in the sky
+      TV2: 3600 # these are all arbitrary numbers
+      TV3: 4100
 
 startUnmuted: true
 
@@ -144,3 +153,13 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
     nowPlayingProvider: plaza-one 
   iframe:
    src: https://ourworldoftext.com/
+
+- number: 12
+  name: Bee Sting
+  title: Bee Sting Programming
+  description: elephant hit
+  youtube-playlist:
+    src: PLj6qdykhRWPlZ1aYt7ugMDfYXIANfV2gU
+    shuffle: true
+  themeOptions:
+    satellite: TV2
