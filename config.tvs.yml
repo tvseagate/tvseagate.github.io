@@ -175,3 +175,8 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   abbr: EAS
   backgroundAudio: https://api.cors.lol/?url=https://radio.wjonip.org/WJONTV
   image: https://file.garden/aUYIWVAKvQxCBY-_/database/photos/workingtv.png
+
+- number: 16
+  name: AIRBENZ TV
+  abbr: AIRBENZ
+  video: https://live20.bozztv.com/giatv/giatv-AIRBENZTV/AIRBENZTV/playlist.m3u8
