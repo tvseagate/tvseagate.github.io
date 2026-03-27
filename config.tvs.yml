@@ -183,3 +183,7 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
     allowInteraction: true
   themeOptions:
     satellite: WEB
+
+- number: 15
+  name: Coming Soon
+  abbr: TEMP
