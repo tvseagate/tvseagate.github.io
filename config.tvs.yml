@@ -22,19 +22,9 @@ animateChannelChange: false
 changeChannelNoise: false
 border: placeholders/border.png
 
-#osd:
-#   theme: sat2007
-#   primaryColor: "#00FFFC"
-
 osd:
-  theme: sat1992 # 1990's analog C-band satellite receiver theme
-  themeOptions:
-    # showChannelInterference: false # by default, we display overlays of
-    satellite: TV1 # the default satellite for all channels to be on. If unset, only channels with a satellite option set will display one.
-    satellites: # you can define a list of different satellites; they'll be a letter and number combination followed by a 4-digit number representing the location in the sky
-      TV2: 3600 # these are all arbitrary numbers
-      TV3: 4100
-      WEB: 6767
+   theme: sat2007
+   primaryColor: "#00FFFC"
 
 startUnmuted: true
 
@@ -79,7 +69,7 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
     scrollDelay: 6
 
 - number: 4
-  name: Guide 1989 custom colors example
+  name: guide
   noiseBlendMode: multiply
   guide:
     theme: "1989"
@@ -172,8 +162,6 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   iframe:
     src: https://webchnl.com/chnltv/
     allowInteraction: true
-  themeOptions:
-    satellite: WEB
 
 - number: 14
   name: YouTube
@@ -181,9 +169,9 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   iframe:
     src: https://cmd-hue.github.io/tvseagate-youtube/
     allowInteraction: true
-  themeOptions:
-    satellite: WEB
 
 - number: 15
-  name: Coming Soon
-  abbr: TEMP
+  name: EAS
+  abbr: EAS
+  backgroundAudio: https://api.cors.lol/?url=https://radio.wjonip.org/WJONTV
+  image: https://file.garden/aUYIWVAKvQxCBY-_/database/photos/workingtv.png
