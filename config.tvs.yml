@@ -34,6 +34,7 @@ osd:
     satellites: # you can define a list of different satellites; they'll be a letter and number combination followed by a 4-digit number representing the location in the sky
       TV2: 3600 # these are all arbitrary numbers
       TV3: 4100
+      WEB: 6767
 
 startUnmuted: true
 
@@ -163,3 +164,22 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
     shuffle: true
   themeOptions:
     satellite: TV2
+
+
+- number: 13
+  name: Webchnl
+  abbr: CHNL
+  iframe:
+    src: https://webchnl.com/chnltv/
+    allowInteraction: true
+  themeOptions:
+    satellite: WEB
+
+- number: 14
+  name: YouTube
+  abbr: YT
+  iframe:
+    src: https://cmd-hue.github.io/tvseagate-youtube/
+    allowInteraction: true
+  themeOptions:
+    satellite: WEB
