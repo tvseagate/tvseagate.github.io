@@ -164,10 +164,10 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
     allowInteraction: true
 
 - number: 14
-  name: YouTube
-  abbr: YT
+  name: WokeTV
+  abbr: WT
   iframe:
-    src: https://cmd-hue.github.io/tvseagate-youtube/
+    src: https://cmd-hue.github.io/woketv/
     allowInteraction: true
 
 - number: 15
