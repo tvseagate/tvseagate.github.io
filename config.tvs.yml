@@ -186,5 +186,5 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   title: Live from OneStream
   abbr: LIVE
   video: 
-    src: https://usb.bozztv.com/tvseagate/index.m3u8
+    src: https://live20.bozztv.com/akamaissh101/ssh101/tvseagate/chunks.m3u8
     aspectRatioBehavior: stretch
