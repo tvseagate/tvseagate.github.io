@@ -1,0 +1,140 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": false,
+    "showFooter": true,
+    "body": {
+      "backgroundColor": "#0f1b2d",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "pghead1",
+    "memo": "header",
+    "style": {
+      "background-color": "#ba1806",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "pgheadl",
+        "lineType": "text",
+        "style": {
+          "text-align": "center",
+          "font-size": "2.5rem",
+          "padding": "2rem 0 0 0"
+        },
+        "chunks": [
+          {
+            "id": "pgheadc",
+            "text": "Header"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "pgfoot1",
+    "memo": "footer",
+    "style": {
+      "background-color": "#16263e",
+      "color": "#b7c9e6"
+    },
+    "lines": [
+      {
+        "id": "pgfootl",
+        "lineType": "text",
+        "style": {
+          "font-size": "1.25rem",
+          "padding": "0.5rem 1.25rem 1rem"
+        },
+        "chunks": [
+          {
+            "id": "pgfootc",
+            "text": "Television Simulator Bulletin"
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "newspg1",
+      "memo": "news page",
+      "repeatKey": "news",
+      "style": {
+        "justify-content": "flex-start"
+      },
+      "animation": {
+        "transitionIn": {
+          "effect": "fade",
+          "durationMs": 250
+        },
+        "transitionOut": {
+          "effect": "fade",
+          "durationMs": 250
+        },
+        "reveal": {
+          "effect": "appear",
+          "lineStaggerMs": 100
+        }
+      },
+      "lines": [
+        {
+          "id": "newsl1",
+          "lineType": "text",
+          "style": {
+            "font-size": "2.25rem",
+            "font-weight": "bold",
+            "padding": "1.25rem 1.5rem 0.5rem",
+            "background-color": "#1c3150"
+          },
+          "chunks": [
+            {
+              "id": "newsc1",
+              "text": "Top Stories",
+              "variableKey": "title"
+            }
+          ]
+        },
+        {
+          "id": "newsl2",
+          "lineType": "text",
+          "repeatKey": "articles",
+          "style": {
+            "font-size": "1.65rem",
+            "font-weight": "bold",
+            "padding": "1rem 1.5rem 0.15rem"
+          },
+          "chunks": [
+            {
+              "id": "newsc2",
+              "text": "Headline",
+              "variableKey": "headline"
+            }
+          ]
+        },
+        {
+          "id": "newsl3",
+          "lineType": "text",
+          "repeatKey": "articles",
+          "style": {
+            "font-size": "1.2rem",
+            "line-height": "1.3",
+            "padding": "0 1.5rem 0.9rem",
+            "border-bottom-color": "rgba(255,255,255,0.12)",
+            "border-bottom-width": "1px",
+            "border-bottom-style": "solid"
+          },
+          "chunks": [
+            {
+              "id": "newsc3",
+              "text": "Story text goes here.",
+              "variableKey": "story"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

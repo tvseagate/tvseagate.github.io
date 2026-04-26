@@ -1,0 +1,116 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": true,
+    "showFooter": false,
+    "body": {
+      "backgroundColor": "#3b3b39",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "gxqxcr6",
+    "memo": "header",
+    "style": {
+      "background-color": "#6e6c66",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "7t3iyoc",
+        "lineType": "text",
+        "style": {
+          "text-align": "center",
+          "font-size": "2.2rem",
+          "padding": "2rem 0 0 0",
+          "text-shadow": "2px 2px 2px #000000",
+          "font-family": "\"Prevue Grid\", monospace"
+        },
+        "chunks": [
+          {
+            "id": "2s2b1ou",
+            "text": "Ultimate Movie Lovers Package!",
+            "effects": [
+              {
+                "component": "ColorCycle",
+                "props": {
+                  "colors": [
+                    "cyan",
+                    "yellow",
+                    "magenta",
+                    "white"
+                  ],
+                  "duration": 400
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "hfoa38k",
+    "memo": "footer",
+    "style": {
+      "background-color": "#40a34d",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "kilb5q3",
+        "lineType": "text",
+        "style": {
+          "font-size": "1.875rem",
+          "padding": "0 1rem 1rem 1rem"
+        },
+        "chunks": [
+          {
+            "id": "3475tfa",
+            "text": "Footer"
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "pgceovh",
+      "memo": "Ad",
+      "lines": [
+        {
+          "id": "xjfx7jk",
+          "lineType": "text",
+          "style": {
+            "text-shadow": "2px 2px 2px #000000",
+            "text-align": "center"
+          },
+          "chunks": [
+            {
+              "id": "0oxk9yw",
+              "text": "HBO, Showtime, Starz & the Movie Channel"
+            }
+          ]
+        },
+        {
+          "id": "dtn2eor",
+          "lineType": "text",
+          "style": {
+            "text-shadow": "2px 2px 2px #000000",
+            "text-align": "center"
+          },
+          "chunks": [
+            {
+              "id": "dnzdvc1",
+              "text": "Just $29.95 / month!"
+            }
+          ]
+        }
+      ],
+      "style": {
+        "font-family": "\"Prevue Grid\", monospace",
+        "justify-content": "center"
+      }
+    }
+  ]
+}

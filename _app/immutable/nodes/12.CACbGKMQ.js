@@ -1,0 +1,1 @@
+import"../chunks/wJLMzueg.js";import{z as F,i as o,A as s}from"../chunks/BQVtuJSP.js";import{C as a}from"../chunks/7D0EX8GE.js";function m(t){let e=s(null);a(t,{swatches:["#000000","#FFFFFF","#FF0000","#00FF00","#0000FF"],nullable:!0,get hex(){return o(e)},set hex(r){F(e,r,!0)}})}export{m as component};

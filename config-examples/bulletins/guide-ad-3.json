@@ -1,0 +1,124 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": false,
+    "showFooter": false,
+    "body": {
+      "backgroundColor": "#0e13ab",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "ylw539t",
+    "memo": "header",
+    "style": {
+      "background-color": "#ba1806",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "ipt0ds1",
+        "lineType": "text",
+        "style": {
+          "text-align": "center",
+          "font-size": "2.5rem",
+          "padding": "2rem 0 0 0"
+        },
+        "chunks": [
+          {
+            "id": "uf0fgp0",
+            "text": "Header"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "ni36ie5",
+    "memo": "footer",
+    "style": {
+      "background-color": "#40a34d",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "m6g2vmc",
+        "lineType": "text",
+        "style": {
+          "font-size": "1.875rem",
+          "padding": "0 1rem 1rem 1rem"
+        },
+        "chunks": [
+          {
+            "id": "08qtf9f",
+            "text": "Footer"
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "k4hl96f",
+      "memo": "Ad",
+      "lines": [
+        {
+          "id": "cvrt3vr",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "12ycy4u",
+              "text": "Always be ready for the day with"
+            }
+          ],
+          "style": {
+            "padding-top": "1rem"
+          }
+        },
+        {
+          "id": "oeo4ka8",
+          "lineType": "text",
+          "style": {
+            "text-align": "center",
+            "font-size": "4rem",
+            "text-shadow": "2px 2px 2px #000000",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill"
+          },
+          "chunks": [
+            {
+              "id": "t7rykxc",
+              "text": "44cast",
+              "effects": [
+                {
+                  "component": "ColorCycle",
+                  "props": {
+                    "colors": [
+                      "yellow",
+                      "white"
+                    ],
+                    "duration": 500
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "31yaum2",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "4ciocm5",
+              "text": "Local, dependable weather"
+            }
+          ]
+        }
+      ],
+      "style": {
+        "background": "linear-gradient(     to bottom,     #0B486B,#F56217   )",
+        "font-family": "\"VCR OSD Mono\", monospace"
+      }
+    }
+  ]
+}

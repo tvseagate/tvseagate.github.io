@@ -1,0 +1,394 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": true,
+    "showFooter": true,
+    "body": {
+      "backgroundColor": "#0e13ab",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "st52j6t",
+    "memo": "header",
+    "style": {
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "3vwk65y",
+        "lineType": "text",
+        "style": {
+          "text-align": "center",
+          "font-size": "2.5rem",
+          "padding": "2rem 0 0 0"
+        },
+        "chunks": [
+          {
+            "id": "plbw03s",
+            "chunkType": "text",
+            "text": "Advanced Text Effects"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "owk4hq4",
+    "memo": "footer",
+    "style": {
+      "color": "#ffffff",
+      "background-color": "#67676773"
+    },
+    "lines": [
+      {
+        "id": "o4txbyn",
+        "lineType": "text",
+        "style": {
+          "font-size": "1.875rem",
+          "text-align": "right",
+          "font-family": "\"Grape Soda\", cursive",
+          "text-shadow": "2px 2px 2px #000000",
+          "-webkit-text-stroke": "2px #000000",
+          "paint-order": "stroke fill",
+          "padding-top": "1rem",
+          "padding-right": "1rem",
+          "padding-bottom": "1rem",
+          "padding-left": "1rem"
+        },
+        "chunks": [
+          {
+            "id": "iokhf6b",
+            "chunkType": "text",
+            "text": "TVS Net  "
+          },
+          {
+            "id": "bgm1lzb",
+            "chunkType": "image",
+            "text": "",
+            "imageSrc": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAANNJREFUWIXtVu0OxCAIk8ve/5Xdn3MxHAURZbtkTZZ9MNsKzlHKn6B+j13vLyPeJmwJpQlbRtwggTADl+4nSRDikB7WuicRRDzhwAB6OQI0KWhAG+SFNhnXGiAilcyKS1AzwMm1jFhxhOEMNHI0SyseNtDIm5gkYsXDBrjQbDxkwKqzdx1MZWClieGvoBH3dfbGwwZGiFNKIGF263ZnAAnPbtthA9H/xe39wO0G1BKs7glcBnZ1RRxqCfo/G7qWxkhnqMHuaykpPeHvRW8gAc9py1+cuzBWVy5NY9MAAAAASUVORK5CYII=",
+            "style": {
+              "image-rendering": "pixelated",
+              "width": "70px"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "9kuq7ad",
+      "memo": "Demo 1",
+      "lines": [
+        {
+          "id": "vovnq9b",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "e509h2q",
+              "chunkType": "text",
+              "text": "Hi there!",
+              "effects": [
+                {
+                  "component": "ShadeCycle",
+                  "props": {
+                    "layers": 216,
+                    "offsetX": 2,
+                    "offsetY": 1,
+                    "startColor": "#00ffff",
+                    "endColor": "#ff69b4",
+                    "repeat": 0,
+                    "offset": 0
+                  }
+                }
+              ],
+              "style": {
+                "font-size": "4rem",
+                "font-family": "\"Home Video Bold\", monospace",
+                "mix-blend-mode": "hard-light",
+                "color": "#0e13ab"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b5sl6au",
+          "lineType": "text",
+          "style": {
+            "font-family": "\"Star4000\", monospace"
+          },
+          "chunks": [
+            {
+              "id": "tnwvgwi",
+              "chunkType": "text",
+              "text": "Sup! This is a",
+              "style": {
+                "color": "#00e1ff",
+                "font-weight": "bold",
+                "mix-blend-mode": "difference"
+              }
+            },
+            {
+              "id": "7tbhanv",
+              "chunkType": "text",
+              "text": " test of the advanced",
+              "style": {
+                "mix-blend-mode": "difference",
+                "color": "#06ba18"
+              }
+            }
+          ]
+        },
+        {
+          "id": "6oj11nl",
+          "lineType": "text",
+          "style": {
+            "font-family": "\"Star4000\", monospace"
+          },
+          "chunks": [
+            {
+              "id": "072d4fi",
+              "chunkType": "text",
+              "text": "text effect options available.",
+              "style": {
+                "color": "#00e1ff",
+                "mix-blend-mode": "difference"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d91ps40",
+      "memo": "Demo 2",
+      "lines": [
+        {
+          "id": "pzu1z4c",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "pvvajfo",
+              "chunkType": "text",
+              "text": ""
+            },
+            {
+              "id": "rmpf67e",
+              "chunkType": "image",
+              "text": "",
+              "imageSrc": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAANNJREFUWIXtVu0OxCAIk8ve/5Xdn3MxHAURZbtkTZZ9MNsKzlHKn6B+j13vLyPeJmwJpQlbRtwggTADl+4nSRDikB7WuicRRDzhwAB6OQI0KWhAG+SFNhnXGiAilcyKS1AzwMm1jFhxhOEMNHI0SyseNtDIm5gkYsXDBrjQbDxkwKqzdx1MZWClieGvoBH3dfbGwwZGiFNKIGF263ZnAAnPbtthA9H/xe39wO0G1BKs7glcBnZ1RRxqCfo/G7qWxkhnqMHuaykpPeHvRW8gAc9py1+cuzBWVy5NY9MAAAAASUVORK5CYII=",
+              "effects": [
+                {
+                  "component": "ShadeCycle",
+                  "props": {
+                    "layers": 31,
+                    "offsetX": -1,
+                    "offsetY": -1,
+                    "startColor": "#d94a1e",
+                    "endColor": "#e3a53b",
+                    "repeat": 0,
+                    "offset": 0
+                  }
+                }
+              ],
+              "style": {
+                "width": "250px",
+                "image-rendering": "pixelated"
+              }
+            }
+          ],
+          "style": {
+            "text-align": "center"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vl38q3p",
+      "memo": "Freeform Scrolling",
+      "lines": [
+        {
+          "id": "jjikrpd",
+          "lineType": "freeform",
+          "freeform": {
+            "contentHeight": "150%"
+          },
+          "chunks": [
+            {
+              "id": "vcyi56n",
+              "chunkType": "text",
+              "text": "            ",
+              "freeform": {
+                "top": "219px",
+                "left": "383px",
+                "width": "177.19px",
+                "height": "48px",
+                "rotation": -25,
+                "objectFit": "fill"
+              },
+              "style": {
+                "background-color": "#ffffff",
+                "font-size": "2rem"
+              }
+            },
+            {
+              "id": "pxmxhjy",
+              "chunkType": "text",
+              "text": "Some Text",
+              "freeform": {
+                "top": "243px",
+                "left": "408px",
+                "width": "132.89px",
+                "height": "36px",
+                "rotation": -22.88,
+                "objectFit": "fill"
+              },
+              "style": {
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "ckxbuyc",
+              "chunkType": "image",
+              "text": "",
+              "imageSrc": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAM9JREFUWIXtVm0PhiAIlPb8/79sX/KZIw5ElNXWba0X9O4EK0p5Cep17Bq/jHibsCWUJmwZcYMEwgz8dY8kQYif9LDWPYkg4gkHBtDgCNCioAFtkhfaYlx7gIhUMisuQc0AJ9cyYsURhjPQyNEqrXjYQCNvYpKIFQ8b4EKz8ZABq87efTCVgZUmht+CRtzX2RsPGxghTinBSoQNzHz9erhLwBH9X7y/BFGoJVjdE7gM7OqKONQS9DscXUtzpDPUYPe1lJSe8H7RG0jAc9ryDyd36FNYOmd9wQAAAABJRU5ErkJggg==",
+              "freeform": {
+                "top": "246px",
+                "left": "243px",
+                "width": "121px",
+                "height": "94px",
+                "rotation": -19.64,
+                "objectFit": "fill"
+              },
+              "effects": [
+                {
+                  "component": "ShadeCycle",
+                  "props": {
+                    "layers": 31,
+                    "offsetX": -1,
+                    "offsetY": -4,
+                    "startColor": "#00ffff",
+                    "endColor": "#ff69b4",
+                    "repeat": 0,
+                    "offset": 0
+                  }
+                }
+              ],
+              "style": {
+                "image-rendering": "pixelated"
+              },
+              "variableKey": "image"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j4860lt",
+      "memo": "Text Order",
+      "lines": [
+        {
+          "id": "7bhptxc",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "zyyk3vz",
+              "chunkType": "text",
+              "text": "You can combine text and freeform layers in interesting ways."
+            }
+          ]
+        },
+        {
+          "id": "6pbo2l5",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "5rivbo4",
+              "chunkType": "text",
+              "text": "Text is laid out in the order it's defined based on the vertical alignment of the page."
+            }
+          ]
+        },
+        {
+          "id": "y5wl6l8",
+          "lineType": "text",
+          "style": {
+            "background-color": "#ba1806"
+          },
+          "chunks": [
+            {
+              "id": "3mcuwqs",
+              "chunkType": "text",
+              "text": "Freeform input isn't like that; it can go anywhere."
+            }
+          ]
+        },
+        {
+          "id": "dnon68a",
+          "lineType": "freeform",
+          "chunks": [
+            {
+              "id": "f0roku8",
+              "chunkType": "text",
+              "text": "Take a look",
+              "freeform": {
+                "top": "253px",
+                "left": "414px",
+                "width": "162.42px",
+                "height": "36px",
+                "rotation": -30.01,
+                "objectFit": "fill"
+              }
+            }
+          ]
+        },
+        {
+          "id": "8ohgibg",
+          "lineType": "text",
+          "style": {
+            "background-color": "#d94a1e"
+          },
+          "chunks": [
+            {
+              "id": "fyi1xrb",
+              "chunkType": "text",
+              "text": "See? We're still going but ->"
+            }
+          ]
+        },
+        {
+          "id": "fwr2k0j",
+          "lineType": "text",
+          "style": {
+            "background-color": "#c96a2a"
+          },
+          "chunks": [
+            {
+              "id": "2dfjfy2",
+              "chunkType": "text",
+              "text": "this is next to us."
+            }
+          ]
+        },
+        {
+          "id": "yzh09zm",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "ei9mba5",
+              "chunkType": "text",
+              "text": "The other thing to note is that when we use a text reveal effect, we still reveal text in the order of the lines, so you can use that to precisely control the order things are drawn in."
+            }
+          ]
+        }
+      ],
+      "animation": {
+        "reveal": {
+          "effect": "appear",
+          "lineStaggerMs": 290
+        }
+      }
+    }
+  ]
+}

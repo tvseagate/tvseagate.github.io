@@ -1,0 +1,1 @@
+import{t,a}from"../chunks/wJLMzueg.js";import{y as n}from"../chunks/BQVtuJSP.js";import{E as l}from"../chunks/CSLMov61.js";function c(e){l(e,{link:"weather-location",children:(r,p)=>{n();var o=t();o.nodeValue="Unable to determine location",a(r,o)},$$slots:{default:!0}})}export{c as component};

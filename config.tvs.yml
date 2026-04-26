@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://gcpw.art/tvs/schemas/5.9.0.json
+# yaml-language-server: $schema=https://gcpw.art/tvs/schemas/5.10.0.json
 
 # Documented configuration file.
 # Data that is required will be denoted as such. Anything that isn't required can be commented out / removed.
@@ -296,15 +296,15 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
             - placeholders/guide-ad.png
             - placeholders/tips-01.png
             - placeholders/guide-ad-2.png
-      - basic-text: # The basic-text engine can display a text slideshow from a data source with rich formatting.
-          src: /config-examples/basic-text/guide-ads.json # This functionality will be improved in future versions; see https://greenhillplaza.notion.site/Basic-Text-9fdb10f4dc7841d28fe92e09904d9aea?pvs=4
-          autoAdvance: true
+      - character-generator: /config-examples/bulletins/guide-ad-1.json
       - slideshow:
           duration: 10
           images:
             - placeholders/tips-02.png
             - placeholders/guide-ad-3.png
             - placeholders/tips-03.png
+      - character-generator: /config-examples/bulletins/guide-ad-2.json
+      - character-generator: /config-examples/bulletins/guide-ad-3.json
     b: # B is the bottom part
       guide: # Program guides read the current channel lineup to reconstruct listings based off channel numbers, title and description. https://greenhillplaza.notion.site/Program-Guides-46e80919a3754efa9769f74dd00946fe?pvs=4
         logo: placeholders/guide-header.png # Logo to show at the top of the guide
@@ -784,3 +784,215 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
       image:
         src: placeholders/schedule-day.png
         pixelated: true
+
+- number: 250
+  name: Character Generator
+  abbr: CG
+  character-generator: config-examples/bulletins/tutorial.json
+
+- number: 251
+  name: Character Generator Overlay
+  abbr: CGOVR
+  mix:
+    a:
+      image: https://c.tenor.com/kgNBW3GoSRoAAAAd/tenor.gif
+    b:
+      character-generator:
+        src: /config-examples/bulletins/overlay-example.json
+
+- number: 252
+  name: Character Generator Variables
+  abbr: CGVAR
+  mix:
+    a:
+      image: https://c.tenor.com/kgNBW3GoSRoAAAAd/tenor.gif
+    b:
+      character-generator:
+        src: /config-examples/bulletins/variables-example-1.json
+        variables:
+          person-name: Hank Scorpio
+          person-title: Globex Corporation CEO
+
+- number: 253
+  name: Character Generator Repeating Lines Example
+  abbr: CGRL
+  character-generator:
+    src: /config-examples/bulletins/variables-example-3.json
+    variables:
+      title: Departures
+    lines: # Optional repeating lines to extend the length of the bulletin. Adjacent template lines with the same repeat key repeat together as one item.
+      flights: # Key of the line group as defined in the source JSON file.
+        - number: OCEANIC 343 # Each new entry in the list will create a new repeated item. In this template, two adjacent lines share the `flights` key, so both lines repeat together for each entry.
+          gate: N64
+          status: On Time
+        - number: OCEANIC 815
+          gate: N67
+          status: On Time
+        - number: OCEANIC 762
+          gate: N72
+          status: Delayed
+        - number: KING 300
+          gate: N75
+          status: Cancelled
+
+- number: 254
+  name: Character Generator with Repeating Pages
+  abbr: CGRP
+  character-generator:
+    src: /config-examples/bulletins/repeating-pages.json
+    pages: # Optional. Similar to lines, but for entire pages. Each entry in the list will create a new page in the bulletin with the given variables.
+      news: # Key of the page group as defined in the source JSON file.
+        - variables: # The structure of each page follows the same structure as top-level variables and lines. Each entry in the list will make a new page with the given variables.
+            title: Local News
+          lines:
+            articles: # The line group here is `articles` and it contains two chunks, `headline` and `story`. Remember that this is dependent on the template you're using!
+            - headline: "Mayor announces new park in downtown area"
+              story: "The city mayor has announced plans to build a new park in the downtown area. The park will feature a playground, walking trails, and a community garden."
+            - headline: "Local sports team wins championship"
+              story: "The local sports team has won the championship, bringing pride and excitement to the community."
+            - headline: "New restaurant opens on Main Street"
+              story: "A new restaurant has opened on Main Street, offering a variety of dishes and a welcoming atmosphere."
+        - variables:
+            title: Weather
+          lines:
+            articles:
+            - headline: "Sunny skies expected this week"
+              story: "The weather forecast for this week predicts sunny skies and warm temperatures, perfect for outdoor activities."
+            - headline: "Chance of rain on Thursday"
+              story: "There is a chance of rain on Thursday, so be sure to bring an umbrella if you have plans to be outside."
+            - headline: "Weekend forecast: partly cloudy"
+              story: "The weekend forecast calls for partly cloudy skies and mild temperatures, ideal for weekend plans."
+        - variables:
+            title: Entertainment
+          lines:
+            articles:
+            - headline: "New movie release breaks box office records"
+              story: "The latest blockbuster movie has broken box office records, drawing large crowds to theaters across the country."
+            - headline: "Famous musician announces world tour"
+              story: "A famous musician has announced a world tour, exciting fans around the globe with the prospect of live performances."
+            - headline: "Art exhibition opens at local museum"
+              story: "A new art exhibition has opened at the local museum, showcasing works from renowned artists and attracting art enthusiasts."
+
+# There are a lot of ways to use the character generator engine; read over these examples and uncomment them to try 'em out! (I uncommented the most interesting ones.)
+
+# - number: 255
+#   name: Dynamic Data in Character Generator Templates
+#   abbr: CGDD
+#   character-generator:
+#     src: /config-examples/bulletins/dynamic-data/example-template.json
+#     refreshInterval: 300 # time in seconds before refreshing data
+#     variables: /config-examples/bulletins/dynamic-data/variables.tvsbv.json # path to JSON file containing variables
+#     lines: /config-examples/bulletins/dynamic-data/lines.tvsbl.json # path to JSON file containing line groups
+#     pages: /config-examples/bulletins/dynamic-data/pages.tvsbp.json # path to JSON file containing page groups
+
+# - number: 256
+#   name: Full Data JSON Example
+#   abbr: CGJ
+#   character-generator:
+#     src: /config-examples/bulletins/dynamic-data/example-template.json
+#     data: /config-examples/bulletins/dynamic-data/full-data.tvsbd.json # you can combine lines, variables and pages all in one file for convenience
+#     refreshInterval: 20
+
+# - number: 257
+#   name: Custom Timing for Character Generator
+#   abbr: CGCT
+#   character-generator:
+#     src: config-examples/bulletins/tutorial.json
+#     scrollSpeed: 50 # speed in pixels per second at which to scroll lines
+#     scrollDelay:
+#       before: 3 # time in seconds to wait before starting to scroll
+#       after: 1 # time in seconds to wait after reaching the end of the scroll
+#     # A single number still works here and applies to both before and after.
+
+# - number: 258
+#   name: Manual Character Generator Pages
+#   abbr: CGMP
+#   character-generator:
+#     src: config-examples/bulletins/tutorial.json
+#     manualAdvance: pages # press X for next page, Z for previous page
+
+# - number: 259
+#   name: Manual Character Generator Lines
+#   abbr: CGML
+#   character-generator:
+#     src: config-examples/bulletins/tutorial.json
+#     manualAdvance: lines # press X to reveal the next line, Z to hide the previous line
+
+# - number: 260
+#   name: Manual Character Generator Chunks
+#   abbr: CGMC
+#   character-generator:
+#     src: config-examples/bulletins/tutorial.json
+#     manualAdvance: chunks # press X to reveal the next chunk, Z to hide the previous chunk
+
+# - number: 261
+#   name: Character Generator Random Start Page
+#   abbr: CGSPR
+#   character-generator:
+#     src: config-examples/bulletins/tutorial.json
+#     startingPage: random # you can start on a random start page
+
+# - number: 262
+#   name: Character Generator Previous Start Page
+#   abbr: CGSPP
+#   character-generator:
+#     src: config-examples/bulletins/tutorial.json
+#     startingPage: previous # you can start on the page you were last viewing
+
+# - number: 263
+#   name: Character Generator Next Start Page
+#   abbr: CGSPP
+#   character-generator:
+#     src: config-examples/bulletins/tutorial.json
+#     startingPage: next # you can start on the next page after the last one you viewed
+
+# - number: 264
+#   name: Character Generator Specific Start Page
+#   abbr: CGSPS
+#   character-generator:
+#     src: config-examples/bulletins/tutorial.json
+#     startingPage: 2 # or you can start on a specific page (0-based index so 0 is the first page)
+#     # when using startingPage with repeated page groups we'll start on the first page of the group with this option
+
+# - number: 265
+#   name: Character Generator Skippable Content
+#   abbr: CGSC
+#   character-generator:
+#     src: config-examples/bulletins/dynamic-data/no-content.json
+#     showBlankPageGroups: true # by default we hide page groups that don't include any data for repeating
+#     showBlankBlockGroups: true # also by default we hide block groups if there aren't any blocks defined for them
+
+# - number: 266
+#   name: Character Generator Page Limit
+#   abbr: CGPL
+#   loop:
+#   - character-generator:
+#       src: config-examples/bulletins/tutorial.json
+#       limit: 2 # limit the number of pages displayed in the loop
+#       startingPage: next # limits work best with a starting page otherwise we'll go back to the one we were just on or the first one every time.
+#       scrollDelay: 2
+#       scrollSpeed: 100
+#   - image: placeholders/example-ad.webp
+#     duration: 3
+
+- number: 267
+  name: Character Generator Advanced Text Effects
+  abbr: CGTE1
+  character-generator:
+    src: config-examples/bulletins/freeform-1.json
+    limit: 2 # limit the number of lines displayed at once
+
+- number: 268
+  name: Advanced Text Effects with Variables
+  abbr: CGTE2
+  mix:
+    a:
+      image: https://picsum.photos/id/829/640/480
+    b:
+      character-generator:
+        variables:
+          title: Aliens attack!
+          text: They're eating all our pizza!
+          news: No news worth sharing right now.....
+        src: config-examples/bulletins/freeform-2.json
+      mixMode: hard-light

@@ -1,0 +1,113 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": true,
+    "showFooter": false,
+    "body": {
+      "backgroundColor": "#0e13ab",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "1udsdv7",
+    "memo": "header",
+    "style": {
+      "background-color": "#ba1806",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "8rczfd3",
+        "lineType": "text",
+        "style": {
+          "text-align": "center",
+          "font-size": "2.5rem",
+          "padding": "2rem 0 0 0"
+        },
+        "chunks": [
+          {
+            "id": "ea1s20v",
+            "text": "Header",
+            "variableKey": "title"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "hgxm752",
+    "memo": "footer",
+    "style": {
+      "background-color": "#40a34d",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "tnccthu",
+        "lineType": "text",
+        "style": {
+          "font-size": "1.875rem",
+          "padding": "0 1rem 1rem 1rem"
+        },
+        "chunks": [
+          {
+            "id": "idspehm",
+            "text": "Footer"
+          }
+        ],
+        "effects": [
+          {
+            "component": "Crawl",
+            "props": {
+              "speed": 80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "616nda5",
+      "memo": "News",
+      "lines": [
+        {
+          "id": "ml78mfu",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "ww1b8yy",
+              "text": "Headline",
+              "style": {
+                "color": "#f2c14e",
+                "font-style": "italic",
+                "font-weight": "bold",
+                "font-size": "2rem"
+              },
+              "variableKey": "headline"
+            },
+            {
+              "id": "q1catxo",
+              "text": "\n"
+            },
+            {
+              "id": "a6vbyzm",
+              "text": "Story",
+              "variableKey": "story"
+            }
+          ],
+          "style": {
+            "text-shadow": "2px 2px 2px #000000",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "border-bottom-color": "#b07a4a",
+            "border-bottom-width": "4px",
+            "border-bottom-style": "solid"
+          },
+          "repeatKey": "articles"
+        }
+      ],
+      "repeatKey": "news"
+    }
+  ]
+}

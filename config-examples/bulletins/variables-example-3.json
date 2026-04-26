@@ -1,0 +1,128 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": true,
+    "showFooter": false,
+    "body": {
+      "backgroundColor": "#2f805f",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "75hf6d4",
+    "memo": "header",
+    "style": {
+      "background-color": "#0e13ab",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "rh7iidz",
+        "lineType": "text",
+        "style": {
+          "text-align": "center",
+          "font-size": "2.5rem",
+          "padding": "2rem 0 0 0"
+        },
+        "chunks": [
+          {
+            "id": "0pe80f4",
+            "text": "Title",
+            "variableKey": "title"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "li095lz",
+    "memo": "footer",
+    "style": {
+      "background-color": "#40a34d",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "fdo9dyf",
+        "lineType": "text",
+        "style": {
+          "font-size": "1.875rem",
+          "padding": "0 1rem 1rem 1rem"
+        },
+        "chunks": [
+          {
+            "id": "mtsi72n",
+            "text": "Footer"
+          }
+        ],
+        "effects": [
+          {
+            "component": "Crawl",
+            "props": {
+              "speed": 80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "6a1d7nx",
+      "memo": "flights",
+      "lines": [
+        {
+          "id": "3xprva7",
+          "lineType": "text",
+          "style": {
+            "text-shadow": "2px 2px 2px #000000",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "background-color": "#8c5a2b"
+          },
+          "chunks": [
+            {
+              "id": "xtx2j4i",
+              "text": "FLIGHT NO.          GATE    STATUS"
+            }
+          ]
+        },
+        {
+          "id": "7wtgtm9",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "xp77pc7",
+              "text": "OCEANIC 343",
+              "variableKey": "number",
+              "variableLength": 20
+            },
+            {
+              "id": "75nxp3a",
+              "text": "N64",
+              "variableKey": "gate",
+              "variableLength": 8
+            },
+            {
+              "id": "s05vslx",
+              "text": "On Time",
+              "variableKey": "status"
+            }
+          ],
+          "style": {
+            "border-bottom-color": "#b07a4a",
+            "border-bottom-width": "5px",
+            "border-bottom-style": "solid"
+          },
+          "repeatKey": "flights"
+        }
+      ],
+      "animation": {
+        "reveal": {
+          "effect": "appear",
+          "lineStaggerMs": 300
+        }
+      }
+    }
+  ]
+}

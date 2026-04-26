@@ -1,0 +1,43 @@
+{
+    "links": [
+        {
+            "variables": {
+                "category": "Video Providers"
+            },
+            "lines": {
+                "entries": [
+                    {
+                        "title": "YouTube",
+                        "description": "The most popular video sharing service in the world."
+                    },
+                    {
+                        "title": "Twitch",
+                        "description": "Live streaming platform focused on gaming."
+                    }
+                ]
+            }
+        },
+        {
+            "variables": {
+                "category": "Search Engines"
+            },
+            "lines": {
+                "entries": [
+                    {
+                        "title": "Google",
+                        "description": "Internet search giant which helped define the Internet in the 2000s."
+                    },
+                    {
+                        "title": "DuckDuckGo",
+                        "description": "Search engine focused on user privacy."
+                    },
+                    {
+                        "title": "Yahoo!",
+                        "description": "One of the most popular search engines of the 1990's."
+                    }
+                ]
+            }
+        }
+    ]
+
+}

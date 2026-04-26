@@ -1,0 +1,139 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": true,
+    "showFooter": false,
+    "body": {
+      "backgroundColor": "#001743",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "hdrflgt",
+    "memo": "header",
+    "style": {
+      "background-color": "#0d2f7a",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "hdrln01",
+        "lineType": "text",
+        "style": {
+          "font-size": "2.25rem",
+          "padding": "1rem 2rem",
+          "font-weight": "bold"
+        },
+        "chunks": [
+          {
+            "id": "hdrchk1",
+            "text": "Departures",
+            "variableKey": "title"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "ftrflgt",
+    "memo": "footer",
+    "style": {
+      "background-color": "#40a34d",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "ftrln01",
+        "lineType": "text",
+        "chunks": [
+          {
+            "id": "ftrchk1",
+            "text": "Footer"
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "pageflt",
+      "memo": "departures board",
+      "style": {
+        "justify-content": "flex-start"
+      },
+      "lines": [
+        {
+          "id": "linehdr1",
+          "lineType": "text",
+          "style": {
+            "padding": "1rem 2rem 0.5rem",
+            "font-size": "1.25rem",
+            "font-weight": "bold",
+            "border-bottom-color": "#5dade2",
+            "border-bottom-width": "2px",
+            "border-bottom-style": "solid"
+          },
+          "chunks": [
+            {
+              "id": "chkhdr1",
+              "text": "FLIGHT",
+              "style": {
+                "display": "inline-block",
+                "width": "16rem"
+              }
+            },
+            {
+              "id": "chkhdr2",
+              "text": "GATE",
+              "style": {
+                "display": "inline-block",
+                "width": "8rem"
+              }
+            },
+            {
+              "id": "chkhdr3",
+              "text": "STATUS"
+            }
+          ]
+        },
+        {
+          "id": "lineflt1",
+          "lineType": "text",
+          "repeatKey": "flights",
+          "style": {
+            "padding": "0.4rem 2rem",
+            "font-size": "1.5rem",
+            "border-bottom-color": "rgba(255,255,255,0.15)",
+            "border-bottom-width": "1px",
+            "border-bottom-style": "solid"
+          },
+          "chunks": [
+            {
+              "id": "fltchk1",
+              "text": "OCEANIC 000",
+              "variableKey": "number",
+              "style": {
+                "display": "inline-block",
+                "width": "16rem"
+              }
+            },
+            {
+              "id": "fltchk2",
+              "text": "A00",
+              "variableKey": "gate",
+              "style": {
+                "display": "inline-block",
+                "width": "8rem"
+              }
+            },
+            {
+              "id": "fltchk3",
+              "text": "BOARDING",
+              "variableKey": "status"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

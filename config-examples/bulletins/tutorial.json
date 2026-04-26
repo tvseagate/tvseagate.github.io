@@ -1,0 +1,1220 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": true,
+    "showFooter": true,
+    "body": {
+      "backgroundColor": "#0e13ab",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "z40gjqe",
+    "memo": "header",
+    "style": {
+      "background-color": "#ba1806",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "v64mduv",
+        "lineType": "text",
+        "style": {
+          "text-align": "center",
+          "font-size": "2.5rem",
+          "padding": "1rem 0 0 0"
+        },
+        "chunks": [
+          {
+            "id": "6je2qgn",
+            "text": "Tutorial Channel"
+          }
+        ]
+      },
+      {
+        "id": "t3ni588",
+        "lineType": "clock",
+        "style": {
+          "text-align": "center"
+        },
+        "chunks": []
+      }
+    ]
+  },
+  "footer": {
+    "id": "slgmv6m",
+    "memo": "footer",
+    "style": {
+      "background-color": "#40a34d",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "36w5nr8",
+        "lineType": "text",
+        "style": {
+          "font-size": "1.875rem",
+          "padding": "0 0 1rem 0"
+        },
+        "chunks": [
+          {
+            "id": "p8ch34v",
+            "text": "Welcome to the Television Simulator Bulletin Editor!"
+          }
+        ],
+        "effects": [
+          {
+            "component": "Crawl",
+            "props": {
+              "speed": 80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "0ab85mp",
+      "memo": "First Page",
+      "lines": [
+        {
+          "id": "741j4v4",
+          "lineType": "text",
+          "style": {
+            "text-align": "center",
+            "font-size": "3rem",
+            "--bulletin-text-width-scale": "1.5",
+            "font-family": "\"Home Video Bold\", monospace",
+            "text-shadow": "2px 2px 2px #000000"
+          },
+          "chunks": [
+            {
+              "id": "lqeenmu",
+              "text": "hello!",
+              "effects": [
+                {
+                  "component": "ColorCycle",
+                  "props": {
+                    "colors": [
+                      "white",
+                      "cyan"
+                    ],
+                    "duration": 400
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "crq2yno",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "1b6fupf",
+              "text": "Welcome to the bulletin editor. Click on any text in the preview to open its settings."
+            }
+          ],
+          "style": {
+            "text-align": "center"
+          }
+        }
+      ],
+      "style": {
+        "justify-content": "center"
+      }
+    },
+    {
+      "id": "midjf0h",
+      "memo": "Structure of the Editor",
+      "lines": [
+        {
+          "id": "wwqyiz1",
+          "lineType": "text",
+          "style": {
+            "text-shadow": "2px 2px 2px #000000",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "--bulletin-text-width-scale": "1.5",
+            "font-size": "2rem",
+            "border-bottom-color": "#c96a2a",
+            "border-bottom-width": "12px",
+            "border-bottom-style": "double"
+          },
+          "chunks": [
+            {
+              "id": "oi0jdzd",
+              "text": "Editor Structure:"
+            }
+          ]
+        },
+        {
+          "id": "ps1kky1",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "g2dd8ka",
+              "text": "Headers and footers are optional and affixed to the top and bottom of the page. They can be edited in their respective tabs."
+            }
+          ]
+        },
+        {
+          "id": "v5lkulu",
+          "lineType": "text",
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          },
+          "chunks": [
+            {
+              "id": "kq2ak7f",
+              "text": "Bulletins contain one or more pages of data. TVS will cycle between these pages, scrolling long pages with too much text to fit on screen automatically."
+            }
+          ]
+        },
+        {
+          "id": "ndct7x5",
+          "lineType": "text",
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          },
+          "chunks": [
+            {
+              "id": "q9488i3",
+              "text": "Pages are made up of lines, and lines are made up of chunks. Each has their own settings."
+            }
+          ]
+        }
+      ],
+      "style": {
+        "background-color": "#8a3fb0"
+      }
+    },
+    {
+      "id": "c80w7rx",
+      "memo": "Pages",
+      "style": {
+        "background-color": "#3b3b39"
+      },
+      "lines": [
+        {
+          "id": "1bfazi6",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "naxnild",
+              "text": "Pages:"
+            }
+          ],
+          "style": {
+            "text-shadow": "2px 2px 2px #000000",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "--bulletin-text-width-scale": "1.5",
+            "font-size": "2rem",
+            "border-bottom-color": "#e3a53b",
+            "border-bottom-width": "12px",
+            "border-bottom-style": "double"
+          }
+        },
+        {
+          "id": "fr0n4vh",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "jixg0qn",
+              "text": "Memo: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "uwzmj6t",
+              "text": "A note that's only visible in the editor. This is used to identify the page."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "i82ims5",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "gknize0",
+              "text": "Background / Foreground Colors: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "i08euey",
+              "text": "You can override the default colors per-page."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "cabvazx",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "vq8h983",
+              "text": "Custom Background Image: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "xp60efo",
+              "text": "You can use CSS background syntax to attach a background image or gradient. Use "
+            },
+            {
+              "id": "bwdi7n9",
+              "text": "url(http://.../image.jpg)",
+              "style": {
+                "color": "#5070d9"
+              }
+            },
+            {
+              "id": "tvkaf2x",
+              "text": " to use a background image. "
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "kvp4slm",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "ppk5cig",
+              "text": "Font: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "sp979p1",
+              "text": "You can override the default font with a selection of pixel fonts as well as browser defaults."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "d1j8dit",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "1pm1cua",
+              "text": "Vertical Alignment: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "3x8afak",
+              "text": "By default we align to the top, but you can change this here. Perfect for centered titles."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "qmkz91t",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "8ncvsqy",
+              "text": "Transitions: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "3g48wof",
+              "text": "When the page is shown or hidden you can choose from a variety of effects and adjust timing settings in milliseconds."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "ytx0nte",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "cn5f7kk",
+              "text": "Text Reveal: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "kz40vqi",
+              "text": "The page's lines can be shown sequentially using a number of effects and timings."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6wvwge5",
+      "memo": "Lines",
+      "style": {
+        "background-color": "#3b3b39"
+      },
+      "lines": [
+        {
+          "id": "si65u79",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "6tjnn2v",
+              "text": "Lines:"
+            }
+          ],
+          "style": {
+            "text-shadow": "2px 2px 2px #000000",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "--bulletin-text-width-scale": "1.5",
+            "font-size": "2rem",
+            "border-bottom-color": "#e3a53b",
+            "border-bottom-width": "12px",
+            "border-bottom-style": "double"
+          }
+        },
+        {
+          "id": "0ogife9",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "bywld6u",
+              "text": "Line Type: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "4pcwrh6",
+              "text": "lines can display static text or a limited number of dynamic sources:"
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "p03mlgc",
+          "lineType": "text",
+          "style": {
+            "padding": "0 4rem",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "font-size": "1.2rem",
+            "text-shadow": "2px 2px 2px #000000"
+          },
+          "chunks": [
+            {
+              "id": "ympik2j",
+              "text": "Text: ",
+              "style": {
+                "color": "#b05b8b"
+              }
+            },
+            {
+              "id": "uqlm88p",
+              "text": "rich text which consists of chunks of text which can be formatted differently"
+            }
+          ]
+        },
+        {
+          "id": "g85d65m",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "hhdnr37",
+              "text": "Clock: ",
+              "style": {
+                "color": "#b05b8b"
+              }
+            },
+            {
+              "id": "bx0nd0l",
+              "text": "time and date display which updates automatically."
+            }
+          ],
+          "style": {
+            "padding": "0 4rem",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "font-size": "1.2rem",
+            "text-shadow": "2px 2px 2px #000000"
+          }
+        },
+        {
+          "id": "ua585aq",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "rypy8a6",
+              "text": "Weather: ",
+              "style": {
+                "color": "#b05b8b"
+              }
+            },
+            {
+              "id": "bi264k7",
+              "text": "summarizes weather data for the location of your choosing."
+            }
+          ],
+          "style": {
+            "padding": "0 4rem",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "font-size": "1.2rem",
+            "text-shadow": "2px 2px 2px #000000"
+          }
+        },
+        {
+          "id": "0xmz522",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "wmj9em5",
+              "text": "Font: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "1y0dc72",
+              "text": "Applies to all text chunks in this line unless overridden."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem",
+            "font-family": "\"Prevue List\", monospace",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "text-shadow": "2px 2px 2px #000000"
+          }
+        },
+        {
+          "id": "m4kp9af",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "iyxelzq",
+              "text": "Alignment: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "bcqtkuh",
+              "text": "whether to align text on this line to the left, right or center."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem",
+            "text-align": "center"
+          }
+        },
+        {
+          "id": "jnkcta8",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "7jab6kk",
+              "text": "Font size: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "x7gbzav",
+              "text": "how big to make the fonts on this line, unless overridden per-chunk."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem",
+            "text-align": "left",
+            "font-size": "2rem"
+          }
+        },
+        {
+          "id": "6p9yy6h",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "4e87bzl",
+              "text": "Line height: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "3kjpe75",
+              "text": "spacing between each line. Use to tighten up or loosen spacing within a paragraph."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem",
+            "text-align": "left",
+            "line-height": "1"
+          }
+        },
+        {
+          "id": "5q2pred",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "72836hr",
+              "text": "Text width: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "m04rymw",
+              "text": "stretches out or compresses text on the line. Use to fit more text on a line or emphasize text."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem",
+            "text-align": "left",
+            "--bulletin-text-width-scale": "1.25"
+          }
+        },
+        {
+          "id": "ljvzp7i",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "d9srl6u",
+              "text": "Padding: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "d1441qr",
+              "text": "CSS syntax padding for adding custom spacing between lines on the top, right, left and bottom of the line."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem",
+            "text-align": "left"
+          }
+        },
+        {
+          "id": "sn9xu14",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "jxmqt3p",
+              "text": "Colors: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "zxwnp0w",
+              "text": "The default colors per line; can be overridden per chunk."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem",
+            "text-align": "left",
+            "color": "#c9c7bf",
+            "background-color": "#0e13ab"
+          }
+        },
+        {
+          "id": "7tk9m2p",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "1tzy0n8",
+              "text": "Character Styles: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "4iqpnm1",
+              "text": "Customizable shadow and outline effects which can be applied with custom colors. They can be used for style or to make text more visible."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem",
+            "text-align": "left",
+            "text-shadow": "2px 2px 2px #b05b8b",
+            "-webkit-text-stroke": "2px #ba1806",
+            "paint-order": "stroke fill"
+          }
+        },
+        {
+          "id": "4s5o32r",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "bmbngnd",
+              "text": "Crawls: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "4qxcfpz",
+              "text": "You can apply a crawl effect to a line with adjustable speed."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem",
+            "text-align": "left"
+          }
+        },
+        {
+          "id": "axshii9",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "bts95ii",
+              "text": "here's a slow crawl"
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem",
+            "text-align": "left"
+          },
+          "effects": [
+            {
+              "component": "Crawl",
+              "props": {
+                "speed": 50
+              }
+            }
+          ]
+        },
+        {
+          "id": "1wihek5",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "v2ias6v",
+              "text": "here's a fast crawl"
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem",
+            "text-align": "left"
+          },
+          "effects": [
+            {
+              "component": "Crawl",
+              "props": {
+                "speed": 200
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "znjhg6k",
+      "memo": "Chunks",
+      "style": {
+        "background-color": "#3b3b39"
+      },
+      "lines": [
+        {
+          "id": "51diq59",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "inoxpr5",
+              "text": "Chunks:"
+            }
+          ],
+          "style": {
+            "text-shadow": "2px 2px 2px #000000",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "--bulletin-text-width-scale": "1.5",
+            "font-size": "2rem",
+            "border-bottom-color": "#e3a53b",
+            "border-bottom-width": "12px",
+            "border-bottom-style": "double"
+          }
+        },
+        {
+          "id": "fav4t7u",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "2lc51ag",
+              "text": "Chunks of text will be displayed on the same line as each other."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "a82zjj6",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "g9m4svd",
+              "text": "Text area: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "inrj3bb",
+              "text": "This is where you enter the text that's displayed on the screen. We'll wrap long lines automatically unless you're using a Crawl effect on the line."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "jeqxy6c",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "nvd4ket",
+              "text": "Colors: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "rkv781h",
+              "text": "You can override "
+            },
+            {
+              "id": "mmqy89u",
+              "text": "background",
+              "style": {
+                "background-color": "#6fbf73"
+              }
+            },
+            {
+              "id": "pvhv4ml",
+              "text": " and "
+            },
+            {
+              "id": "zd6yl5k",
+              "text": "foreground",
+              "style": {
+                "color": "#d94a1e"
+              }
+            },
+            {
+              "id": "1v1yh6g",
+              "text": " colors per chunk."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "nfkht75",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "mh8fh7z",
+              "text": "Font:",
+              "style": {
+                "color": "#f2c14e",
+                "font-family": "\"Home Video Bold\", monospace"
+              }
+            },
+            {
+              "id": "rpxpupg",
+              "text": " You can specify a font override per chunk.",
+              "style": {
+                "font-family": "\"Star4000\", monospace"
+              }
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "1g72wid",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "d09527g",
+              "text": "Font size: ",
+              "style": {
+                "color": "#f2c14e",
+                "font-size": "2rem"
+              }
+            },
+            {
+              "id": "08ulo8r",
+              "text": "You can override font sizes per chunk."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "okv60tl",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "bf9t8p3",
+              "text": "Font Weight: ",
+              "style": {
+                "color": "#f2c14e",
+                "font-weight": "bold"
+              }
+            },
+            {
+              "id": "840zzwr",
+              "text": "Text chunks can be bold.",
+              "style": {
+                "font-weight": "bold"
+              }
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "ewyn70n",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "mhbu3ud",
+              "text": "Font Style: ",
+              "style": {
+                "color": "#f2c14e",
+                "font-weight": "normal",
+                "font-style": "italic"
+              }
+            },
+            {
+              "id": "enowr4r",
+              "text": "Text chunks can be italic.",
+              "style": {
+                "font-style": "italic"
+              }
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "phiu4ew",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "kah8lnr",
+              "text": "Blink: ",
+              "style": {
+                "color": "#f2c14e",
+                "font-weight": "normal"
+              },
+              "effects": [
+                {
+                  "component": "Blink",
+                  "props": {
+                    "timeVisible": 800,
+                    "timeHidden": 500
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hc47rj9",
+              "text": "You can make text blink with custom timings in milliseconds for time displayed vs time hidden."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "9hm0vjc",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "bzu657h",
+              "text": "Color Cycle:",
+              "style": {
+                "color": "#f2c14e",
+                "font-weight": "normal"
+              },
+              "effects": [
+                {
+                  "component": "ColorCycle",
+                  "props": {
+                    "colors": [
+                      "red",
+                      "yellow",
+                      "yellowgreen"
+                    ],
+                    "duration": 200
+                  }
+                }
+              ]
+            },
+            {
+              "id": "5tl42ro",
+              "text": " You can animate changing text color per text chunk with "
+            },
+            {
+              "id": "qq4bxw0",
+              "text": "custom colors",
+              "effects": [
+                {
+                  "component": "ColorCycle",
+                  "props": {
+                    "colors": [
+                      "cyan",
+                      "magenta",
+                      "yellow",
+                      "white"
+                    ],
+                    "duration": 300
+                  }
+                }
+              ]
+            },
+            {
+              "id": "wg7tg5l",
+              "text": " and timing.",
+              "effects": [
+                {
+                  "component": "ColorCycle",
+                  "props": {
+                    "colors": [
+                      "red",
+                      "white",
+                      "white",
+                      "white",
+                      "white",
+                      "white",
+                      "white",
+                      "white",
+                      "white",
+                      "white",
+                      "white"
+                    ],
+                    "duration": 200
+                  }
+                }
+              ]
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        }
+      ]
+    },
+    {
+      "id": "51cjcst",
+      "memo": "Weather",
+      "style": {
+        "background-color": "#3b3b39"
+      },
+      "lines": [
+        {
+          "id": "gymldaz",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "58vxc7i",
+              "text": "Weather:"
+            }
+          ],
+          "style": {
+            "text-shadow": "2px 2px 2px #000000",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "--bulletin-text-width-scale": "1.5",
+            "font-size": "2rem",
+            "border-bottom-color": "#e3a53b",
+            "border-bottom-width": "12px",
+            "border-bottom-style": "double"
+          }
+        },
+        {
+          "id": "6z3rr0o",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "8ahocog",
+              "text": "You can display weather info by setting a line type to Weather. Weather data is retrieved from a variety of providers."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "406jf1g",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "vuffqb8",
+              "text": "Weather info is cached and refreshed every 15 minutes. Some providers have more info than others."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "cozytp9",
+          "lineType": "text",
+          "style": {
+            "background-color": "#d94a1e"
+          },
+          "chunks": [
+            {
+              "id": "buapc4p",
+              "text": "Default weather line:"
+            }
+          ]
+        },
+        {
+          "id": "um7c4yd",
+          "lineType": "weather",
+          "style": {
+            "background-color": "#0e13ab"
+          },
+          "chunks": [],
+          "weather": {
+            "provider": "wttr.in",
+            "units": "imperial",
+            "locationMode": "auto-ip"
+          }
+        },
+        {
+          "id": "eofrbkw",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "6octwhg",
+              "text": "To make it look more authentic, use a narrow font and make the font size bigger:"
+            }
+          ],
+          "style": {
+            "background-color": "#d94a1e"
+          }
+        },
+        {
+          "id": "5g2yixt",
+          "lineType": "weather",
+          "weather": {
+            "provider": "wttr.in",
+            "units": "imperial",
+            "locationMode": "auto-ip"
+          },
+          "chunks": [],
+          "style": {
+            "background-color": "#0e13ab",
+            "--bulletin-text-width-scale": "0.8",
+            "font-size": "2.2rem"
+          }
+        }
+      ]
+    },
+    {
+      "id": "xqzg75n",
+      "memo": "Variables",
+      "style": {
+        "background-color": "#3a5f8c"
+      },
+      "lines": [
+        {
+          "id": "gesspwm",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "a23xdd7",
+              "text": "Variables:"
+            }
+          ],
+          "style": {
+            "text-shadow": "2px 2px 2px #000000",
+            "-webkit-text-stroke": "2px #000000",
+            "paint-order": "stroke fill",
+            "--bulletin-text-width-scale": "1.5",
+            "font-size": "2rem",
+            "border-bottom-color": "#e3a53b",
+            "border-bottom-width": "12px",
+            "border-bottom-style": "double"
+          }
+        },
+        {
+          "id": "46ypbjm",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "mecnicp",
+              "text": "Variable Key: ",
+              "style": {
+                "color": "#f2c14e"
+              }
+            },
+            {
+              "id": "50mxd5u",
+              "text": "you can replace pages on-the-fly using variables. Under the \"Chunk Programmability\" tab, add a new key for a variable you'd like to replace."
+            }
+          ],
+          "style": {
+            "padding": "1rem 1rem 0 1rem"
+          }
+        },
+        {
+          "id": "a4p2yej",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "uj99hmd",
+              "text": "For instance: "
+            },
+            {
+              "id": "0ldurmg",
+              "text": "replace me!",
+              "style": {
+                "color": "#06ba18"
+              },
+              "variableKey": "replace-me"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

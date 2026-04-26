@@ -1,0 +1,178 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": true,
+    "showFooter": true,
+    "body": {
+      "backgroundColor": "#0e1726",
+      "textColor": "#f4f7fb"
+    }
+  },
+  "header": {
+    "id": "dynhdr1",
+    "memo": "dynamic header",
+    "style": {
+      "background-color": "#12355b",
+      "color": "#f4f7fb"
+    },
+    "lines": [
+      {
+        "id": "dynhdrline1",
+        "lineType": "text",
+        "style": {
+          "font-size": "1.9rem",
+          "font-weight": "bold",
+          "padding": "0.9rem 1.2rem 0.5rem"
+        },
+        "chunks": [
+          {
+            "id": "dynhdrchunk1",
+            "text": "Network",
+            "variableKey": "network"
+          },
+          {
+            "id": "dynhdrchunk2",
+            "text": " / "
+          },
+          {
+            "id": "dynhdrchunk3",
+            "text": "Category",
+            "variableKey": "category"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "dynftr1",
+    "memo": "dynamic footer",
+    "style": {
+      "background-color": "#1b2a41",
+      "color": "#d8e3f2"
+    },
+    "lines": [
+      {
+        "id": "dynftrline1",
+        "lineType": "text",
+        "style": {
+          "font-size": "1.05rem",
+          "padding": "0.5rem 1.2rem 0.35rem",
+          "font-weight": "bold"
+        },
+        "chunks": [
+          {
+            "id": "dynftrchunk1",
+            "text": "Provider",
+            "variableKey": "cable-provider"
+          }
+        ]
+      },
+      {
+        "id": "dynftrline2",
+        "lineType": "text",
+        "repeatKey": "scores",
+        "style": {
+          "font-size": "0.95rem",
+          "padding": "0 1.2rem 0.55rem"
+        },
+        "chunks": [
+          {
+            "id": "dynftrchunk2",
+            "text": "Game",
+            "variableKey": "game",
+            "variableLength": 20,
+            "variablePadCharacter": " ",
+            "variablePadAlignment": "right"
+          },
+          {
+            "id": "dynftrchunk3",
+            "text": "  "
+          },
+          {
+            "id": "dynftrchunk4",
+            "text": "Score",
+            "variableKey": "score",
+            "variableLength": 5,
+            "variablePadCharacter": " ",
+            "variablePadAlignment": "left"
+          },
+          {
+            "id": "dynftrchunk5",
+            "text": "  "
+          },
+          {
+            "id": "dynftrchunk6",
+            "text": "Period",
+            "variableKey": "period"
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "dynpage1",
+      "memo": "dynamic directory pages",
+      "repeatKey": "links",
+      "style": {
+        "justify-content": "flex-start"
+      },
+      "lines": [
+        {
+          "id": "dynline1",
+          "lineType": "text",
+          "style": {
+            "font-size": "2rem",
+            "font-weight": "bold",
+            "padding": "1.25rem 1.4rem 0.45rem",
+            "color": "#ffd166"
+          },
+          "chunks": [
+            {
+              "id": "dynchunk1",
+              "text": "Directory",
+              "variableKey": "category"
+            }
+          ]
+        },
+        {
+          "id": "dynline2",
+          "lineType": "text",
+          "repeatKey": "entries",
+          "style": {
+            "font-size": "1.45rem",
+            "font-weight": "bold",
+            "padding": "0.8rem 1.4rem 0.1rem"
+          },
+          "chunks": [
+            {
+              "id": "dynchunk2",
+              "text": "Title",
+              "variableKey": "title"
+            }
+          ]
+        },
+        {
+          "id": "dynline3",
+          "lineType": "text",
+          "repeatKey": "entries",
+          "style": {
+            "font-size": "1.05rem",
+            "line-height": "1.35",
+            "padding": "0 1.4rem 0.9rem",
+            "border-bottom-color": "rgba(255,255,255,0.14)",
+            "border-bottom-width": "1px",
+            "border-bottom-style": "solid"
+          },
+          "chunks": [
+            {
+              "id": "dynchunk3",
+              "text": "Description",
+              "variableKey": "description"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

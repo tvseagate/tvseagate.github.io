@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": false,
+    "showFooter": true,
+    "body": {
+      "backgroundColor": "#0e13ab00",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "vzncvyr",
+    "memo": "header",
+    "style": {
+      "background-color": "#ba1806",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "3tyak21",
+        "lineType": "text",
+        "style": {
+          "text-align": "center",
+          "font-size": "2.5rem",
+          "padding": "2rem 0 0 0"
+        },
+        "chunks": [
+          {
+            "id": "3591in0",
+            "text": "Header"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "qfbrtym",
+    "memo": "footer",
+    "style": {
+      "background-color": "#40a34d7d",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "pgsyj5f",
+        "lineType": "text",
+        "style": {
+          "font-size": "3rem",
+          "padding": "0 5rem 2rem 0",
+          "text-shadow": "2px 2px 2px #000000",
+          "-webkit-text-stroke": "2px #000000",
+          "paint-order": "stroke fill",
+          "text-align": "right"
+        },
+        "chunks": [
+          {
+            "id": "6bj8mu4",
+            "text": "TVS"
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "ym9jzzs",
+      "memo": "Overlay",
+      "lines": [
+        {
+          "id": "cciy387",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "9vzj6dm",
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

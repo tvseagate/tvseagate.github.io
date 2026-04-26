@@ -1,0 +1,170 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": true,
+    "showFooter": true,
+    "body": {
+      "backgroundColor": "#1d4ed8",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "yip080t",
+    "memo": "header",
+    "style": {
+      "background-color": "#991b1b",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "co1789z",
+        "lineType": "text",
+        "style": {
+          "text-align": "center",
+          "font-size": "2.5rem",
+          "padding": "0",
+          "text-shadow": "2px 2px 2px #000000",
+          "-webkit-text-stroke": "2px black",
+          "paint-order": "stroke fill"
+        },
+        "chunks": [
+          {
+            "id": "euk4z63",
+            "text": "HYPERCOM CABLE "
+          },
+          {
+            "id": "etiz06c",
+            "text": "bulletin",
+            "effects": [
+              {
+                "component": "ColorCycle",
+                "props": {
+                  "colors": [
+                    "white",
+                    "pink"
+                  ],
+                  "duration": 300
+                }
+              }
+            ],
+            "style": {
+              "font-family": "\"American Cursive\", cursive",
+              "font-size": "3.5rem",
+              "font-style": "italic"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "4dthmiz",
+    "memo": "footer",
+    "style": {
+      "background-color": "#16a34a",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "emo8k1l",
+        "lineType": "clock",
+        "style": {
+          "text-align": "center",
+          "background-color": "#7e3b87",
+          "font-family": "\"Grape Soda\", cursive",
+          "text-shadow": "2px 2px 2px #000000",
+          "-webkit-text-stroke": "2px black",
+          "paint-order": "stroke fill"
+        },
+        "chunks": []
+      },
+      {
+        "id": "xsnih3w",
+        "lineType": "text",
+        "style": {
+          "font-size": "1.875rem",
+          "padding": "0.25rem 0.5rem 1rem",
+          "font-family": "\"VCR OSD Mono\", monospace",
+          "text-shadow": "2px 2px 2px #000000"
+        },
+        "chunks": [
+          {
+            "id": "ml447tx",
+            "text": "Welcome to the Television Simulator Bulletin Editor!"
+          }
+        ],
+        "effects": [
+          {
+            "component": "Crawl",
+            "props": {
+              "speed": 80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "v42s7r1",
+      "memo": "welcome page",
+      "lines": [
+        {
+          "id": "7829clx",
+          "lineType": "text",
+          "style": {
+            "text-shadow": "2px 2px 2px #000000"
+          },
+          "chunks": [
+            {
+              "id": "lz4nnxi",
+              "text": "New!",
+              "effects": [
+                {
+                  "component": "ColorCycle",
+                  "props": {
+                    "colors": [
+                      "cyan",
+                      "magenta",
+                      "yellow",
+                      "white"
+                    ],
+                    "duration": 100
+                  }
+                }
+              ],
+              "style": {
+                "font-size": "1.5rem",
+                "font-weight": "bold",
+                "font-style": "italic"
+              }
+            },
+            {
+              "id": "fr946e0",
+              "text": " The ability to do custom headers and footers; the clock doesn't need to be up at the top anymore."
+            }
+          ]
+        }
+      ],
+      "style": {
+        "background": "url('https://static.vecteezy.com/system/resources/previews/041/330/598/non_2x/ai-generated-peaceful-tropical-beach-and-sunset-at-dusk-in-natural-environment-free-photo.jpg') center/cover"
+      }
+    },
+    {
+      "id": "8ovimcj",
+      "memo": "New page",
+      "lines": [
+        {
+          "id": "xu82tsg",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "99a2h72",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec pellentesque nisi, id placerat ante. Vivamus nisl sem, feugiat quis cursus et, condimentum ut mauris. Nunc porta semper mi, sit amet suscipit eros dignissim at. Morbi tempor congue lorem ac bibendum. Morbi aliquet massa libero, eu egestas nisi maximus vitae. Quisque sed ligula tincidunt, vulputate justo vitae, tincidunt turpis. Mauris non eros libero. Vestibulum eget placerat dui. Mauris rutrum sed est non imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas sodales finibus dignissim. Suspendisse potenti.\n\nMorbi dignissim lectus sed mauris dictum, in sollicitudin ante mollis. Curabitur velit turpis, feugiat at feugiat non, scelerisque et metus. Suspendisse potenti. Nullam eu egestas dui. Phasellus sit amet neque suscipit, tincidunt arcu non, rhoncus eros. Phasellus consectetur ante tellus, nec tincidunt nulla mollis vel. Integer quis dui fringilla, ultricies leo nec, fermentum ante. Nulla vitae sem vitae nunc viverra interdum. Fusce volutpat interdum pretium. Nam scelerisque purus non varius vehicula. Mauris risus justo, imperdiet id finibus nec, suscipit bibendum sapien. Maecenas in convallis purus, at commodo eros. Cras convallis, mauris id ullamcorper auctor, dui risus commodo nisi, sit amet luctus mauris lacus vitae augue.\n\nEtiam tristique interdum condimentum. Curabitur efficitur malesuada mauris, non interdum orci tempus posuere. Aenean sit amet odio id quam sollicitudin tempor. Pellentesque luctus finibus consectetur. Praesent imperdiet id nunc vel molestie. Donec ultrices viverra tempus. Quisque ligula tellus, tincidunt ac luctus quis, elementum sit amet dolor. Aliquam vitae turpis et nulla sagittis egestas sed eget quam. Duis vel consectetur orci, vitae placerat elit.\n\nUt pulvinar aliquet metus vitae commodo. Aenean facilisis, metus bibendum eleifend vehicula, nisl lacus placerat urna, vel tristique turpis ligula ac sem. Etiam non est leo. Mauris eu consequat massa, vel rutrum orci. Vestibulum a lacus at enim viverra convallis. Quisque nec tincidunt erat. Vivamus non aliquet felis, id ullamcorper massa. Fusce id elit sit amet massa mollis consectetur.\n\nDonec vel lorem pharetra, tempus urna et, viverra turpis. Nullam consectetur libero a nulla tincidunt, bibendum laoreet enim molestie. Sed eget maximus ipsum. Pellentesque mollis dolor magna, at mattis magna ullamcorper egestas. Fusce sed nisl maximus diam facilisis finibus a id ligula. Fusce sed urna quam. Duis efficitur porta ipsum, vitae bibendum orci porta non. Nulla justo tellus, faucibus eu feugiat vitae, ultrices nec odio. Nam sit amet velit id sapien venenatis gravida. Phasellus placerat ullamcorper tincidunt. Sed elementum ante a quam rutrum, in condimentum lectus faucibus. Curabitur eget convallis justo. Pellentesque vel venenatis odio. Praesent dictum vehicula ante in aliquam. Sed tristique, ipsum a ornare tincidunt, est leo sagittis magna, nec lacinia tortor lacus eget libero."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

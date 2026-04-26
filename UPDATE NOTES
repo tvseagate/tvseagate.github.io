@@ -1,3 +1,44 @@
+# Update Notes - 5.10.0 (2026-04-20)
+
+## ✨ New Features
+
+This update has added a new Character Generator engine that can be used in many scenarios:
+
+* Displaying news bulletins, weather and text ads
+* Overlaying text over videos or images
+* Adding a crawl / ticker to a channel
+* Integrating with live data (given you supply it in the right format)
+
+TVS 5.10 ships with a built-in character generator template editor which you can also [try on the demo site](https://tvs.gcpw.art/bulletin-editor).
+
+This update also adds two new weather providers that work worldwide: [wttr.in](https://github.com/chubin/wttr.in) and [weatherapi.com](https://www.weatherapi.com/) which requires an API key.
+
+```yml
+- number: 150
+  name: Weather demo
+  abbr: WX1
+  weather:
+    logo: placeholders/weather.png
+    provider: wttr.in
+    units: imperial
+
+- number: 151
+  name: Weather demo
+  abbr: WX2
+  weather:
+    logo: placeholders/weather.png
+    provider: weatherapi.com
+    apiKey: "YOUR-API-KEY"
+    units: metric
+```
+
+### ❗ Deprecation Notice
+
+The `basic-text` engine has been deprecated and will be removed in TVS 6.0. All example usages of it have been updated to use `character-generator` instead.
+
+---
+
+
 # Update Notes - 5.9.2 (2026-03-16)
 
 ## 🔧 Bug Fixes

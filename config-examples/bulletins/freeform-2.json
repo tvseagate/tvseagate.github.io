@@ -1,0 +1,161 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": false,
+    "showFooter": true,
+    "body": {
+      "backgroundColor": "#0e13ab00",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "g9hm3xn",
+    "memo": "header",
+    "style": {
+      "background-color": "#ba1806",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "2epyry7",
+        "lineType": "text",
+        "chunks": [
+          {
+            "id": "0pdp48b",
+            "chunkType": "text",
+            "text": ""
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "qus3eys",
+    "memo": "footer",
+    "style": {
+      "background-color": "#000000",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "s50hktx",
+        "lineType": "text",
+        "chunks": [
+          {
+            "id": "ap643e0",
+            "chunkType": "text",
+            "text": "NEWS TICKER",
+            "variableKey": "news"
+          }
+        ],
+        "effects": [
+          {
+            "component": "Crawl",
+            "props": {
+              "speed": 80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "abcofid",
+      "memo": "",
+      "lines": [
+        {
+          "id": "4pvvp3e",
+          "lineType": "freeform",
+          "chunks": [
+            {
+              "id": "wk8u12e",
+              "chunkType": "image",
+              "text": "",
+              "imageSrc": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACeElEQVR4AVSUW5ajMAxEZQPJ/neQ7G56DQnS3Csgnf7QKb1Vlg3z8fOsxz/k51GPU574nvoU9fab81fMe3T81z9rXyJqi9q3iP0WCVZuseeKX3uNyjtxbPy1g+aAdWJ84az3Fvmy2RqJHm/wRVHjEuO9EF+i2l4b1S8J4rvNjSPTKQHLotkQmebEIeLL9w3mDNC2ECzQnELP/c5Q4uQG/ll0TUTcSRDTqbBOjl0kGU9Yqx/xldOs0evq3DXSPGSmTdiN6IQDN/bm1JWiLboxOUVuxxmUFBesGr0D4kF8jg6wo0aagCbFiQX7oLC0YdN+7KBY5gUGOeZpw9AmN5jAhilFYSefWLAJbv/w3/poH5t8h9cnvsW5QxgyJV9LOM0d2qBR/3v0QO0jjt3+K3/G4Z80hHIh2VPYV+tbFJdS6Mf0WxS3/cf+xMhFz66/xbRzcYO+p0sfTA+OfPndj/FvVC92eiDrOk83+6mwi2JK69xY0iyx3V8junhJET9EdjSzHjHODpfwPeXJyj0Wt9j7olC/THbYeAL9R5xG1CRSsGskZxbTTSgCOj1q0ijwJ3sMdHOGNnqA5ormGVOCmDgNlgbd/QQ/TRlQuYS2cdEisVdBfFB32Evs2PpnMTGRSm6yb8o/C98vOynsMMYKGtEbtYkn9iCnXvcY1vMSpvtpljBMjli8uWx9wm5jMiwp1LfzGpIfiI3yZXwlDurTZpczSC6oBxPj/Cr0xfUPhIGrCOO8gIBF23UP8wb18VXfn54MexdM8sfabGBp4sFojbQIBm2zL3O6Dr+1iq9g1jlBTHej4Bug6xgUBHq4Dvyt01AsY0jpR3Lf4j8AAAD//zz7S60AAAAGSURBVAMAk87HWRSqNrcAAAAASUVORK5CYII=",
+              "freeform": {
+                "left": "0px",
+                "width": "604px",
+                "height": "112px",
+                "rotation": 0,
+                "objectFit": "fill",
+                "bottom": "35px"
+              },
+              "style": {
+                "image-rendering": "pixelated",
+                "mix-blend-mode": "hard-light"
+              }
+            },
+            {
+              "id": "y6m87ic",
+              "chunkType": "image",
+              "text": "",
+              "imageSrc": "https://picsum.photos/72",
+              "freeform": {
+                "width": "auto",
+                "height": "auto",
+                "rotation": 0,
+                "objectFit": "fill",
+                "right": "40px",
+                "bottom": "60px"
+              },
+              "effects": [
+                {
+                  "component": "ShadeCycle",
+                  "props": {
+                    "layers": 5,
+                    "offsetX": 1,
+                    "offsetY": 1,
+                    "startColor": "#000000",
+                    "endColor": "#000000",
+                    "repeat": 0,
+                    "offset": 0
+                  }
+                }
+              ]
+            },
+            {
+              "id": "k1bfvyu",
+              "chunkType": "text",
+              "text": "CHIRON TITLE",
+              "freeform": {
+                "left": "40px",
+                "width": "auto",
+                "height": "auto",
+                "rotation": 0,
+                "objectFit": "fill",
+                "bottom": "100px"
+              },
+              "variableKey": "title",
+              "style": {
+                "background-color": "#6a2c91"
+              },
+              "variableLength": 28
+            },
+            {
+              "id": "eoge8o7",
+              "chunkType": "text",
+              "text": "Chiron text.",
+              "freeform": {
+                "left": "40px",
+                "width": "420px",
+                "height": "60px",
+                "rotation": 0,
+                "objectFit": "fill",
+                "bottom": "40px"
+              },
+              "variableKey": "text",
+              "style": {
+                "font-size": "1rem",
+                "color": "#000000"
+              }
+            }
+          ]
+        }
+      ],
+      "style": {
+        "justify-content": "flex-start"
+      }
+    }
+  ]
+}

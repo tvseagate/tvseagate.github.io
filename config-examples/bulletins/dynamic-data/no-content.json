@@ -1,0 +1,89 @@
+{
+  "version": 2,
+  "layout": {
+    "showHeader": true,
+    "showFooter": true,
+    "body": {
+      "backgroundColor": "#0e13ab",
+      "textColor": "#ffffff"
+    }
+  },
+  "header": {
+    "id": "fue5nfo",
+    "memo": "header",
+    "style": {
+      "background-color": "#ba1806",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "8xek1c9",
+        "lineType": "text",
+        "style": {
+          "text-align": "center",
+          "font-size": "2.5rem",
+          "padding": "2rem 0 0 0"
+        },
+        "chunks": [
+          {
+            "id": "yzufma3",
+            "text": "Header"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "8lqvv9y",
+    "memo": "footer",
+    "style": {
+      "background-color": "#40a34d",
+      "color": "#ffffff"
+    },
+    "lines": [
+      {
+        "id": "5h6vk66",
+        "lineType": "text",
+        "style": {
+          "font-size": "1.875rem",
+          "padding": "0 1rem 1rem 1rem"
+        },
+        "chunks": [
+          {
+            "id": "4q274kd",
+            "text": "Footer"
+          }
+        ],
+        "effects": [
+          {
+            "component": "Crawl",
+            "props": {
+              "speed": 80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "7ome3kq",
+      "memo": "welcome page",
+      "lines": [
+        {
+          "id": "hjmi3d5",
+          "lineType": "text",
+          "chunks": [
+            {
+              "id": "j14sfej",
+              "text": "Placeholder content",
+              "variableKey": "baz"
+            }
+          ],
+          "repeatKey": "bar"
+        }
+      ],
+      "repeatKey": "foo"
+    }
+  ]
+}
