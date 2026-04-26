@@ -10,23 +10,13 @@
 #
 # These options control the picture and the window.
 ##########################
-
-applicationTitle: Television Seagate
-
-scanlines: true 
-shadowMask: aperture-grille 
-noise: 0.15
-blur: 1
-bezel: flat 
-animateChannelChange: false
-changeChannelNoise: false
-border: placeholders/border.png
-
-osd:
-   theme: sat2007
-   primaryColor: "#00FFFC"
+applicationTitle: Dunceville Hotel TV # What the DirecTV UI might have looked like in 2012
 
 startUnmuted: true
+
+osd:
+  theme: digital
+
 
 dimensions:
   screenWidth: 800
@@ -43,174 +33,15 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   name: plankussy
   abbr: PLSY
   icon: https://file.garden/aUYIWVAKvQxCBY-_/database/images/fishmcbitesapp.jpeg
-  pip:
-   a:
-    image: p/ogplankussy.png
-   b:
-    image: p/fih.png
-  backgroundAudio: https://dn710204.ca.archive.org/0/items/SUPERCELL_Clash-of-Clans-Soundtrack-2023/Clash%20of%20Clans/AudioOnly/Halloween-Music/Compilation/OGG/Home_music_BuilderBase_Part_1-2_Halloween.mp3
 
 - number: 2
-  name: what the sigma
-  abbr: SEP
-  description: INCREDIBOX KATS DETECTED!!!! OwO thats grilled chicken
-  youtube-playlist:
-    src: PLpKW54fMiMFxdGQSefzMAO3r3xt3IOIry
-    shuffle: true
-
-- number: 3
-  name: TVS Update News
-  abbr: NEWS
-  feed-reader:
-    src: https://docs.tvs.gcpw.art/tvs-changelog.xml
-    title: TVS Update News
-    refreshInterval: 300
-    scrollSpeed: 35
-    scrollDelay: 6
-
-- number: 4
-  name: guide
-  noiseBlendMode: multiply
-  guide:
-    theme: "1989"
-    logo: p/plankussy.png
-    primaryColor: white # Optional. The primary color of the guide; this is used for the default background color of guide cells
-    secondaryColor: blue # Optional. The secondary color of the guide; this is used for the text color of headers and channel numbers
-    textColor: black # Optional. The text color of the guide; this is used for the text color of guide cells
-    alerts:
-      - position: 32
-        text: |
-          Plankussy... throbbing...
-
-
-- number: 5
-  name: oh fuck
-  abbr: FUCK
-  feed-reader:
-    src: https://tvseagate.github.io/cbt.rss
-    title: shart
-    refreshInterval: 300
-    scrollSpeed: 35
-    scrollDelay: 6
-
-- number: 6
-  name: KCNS_20130309_060000_Noticias_MundoFox.mp4
-  abbr: KCNS
-  title: Noticias MundoFox
-  description: Preview the hottest movies on Pay-Per-View and On Demand!
-  video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/KCNS_20130309_060000_Noticias_MundoFox.mp4
-
-- number: 7
-  name: WMAR_20110605_230000_Jimmy_Kimmel_Live.mp4
-  abbr: WMAR
-  title: Jimmy Kimmel Live
-  video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/WMAR_20110605_230000_Jimmy_Kimmel_Live.mp4
-
-- number: 8
-  name: EAS
-  abbr: EAS
-  title: Current EAS Alerts
-  feed-reader:
-    src: https://api.weather.gov/alerts/active.atom?zone=OHZ070
-    title: Current EAS Alerts
-    refreshInterval: 300
-    scrollSpeed: 35
-    scrollDelay: 6
-
-- number: 9
-  name: Customer Information
-  title: The new FiOS TV is here!
-  abbr: CTF
-  backgroundAudio: https://file.garden/aUYIWVAKvQxCBY-_/database/music/Quant5%20extended%20-%20UK%20Garage.mp3
-  video: https://file.garden/aUYIWVAKvQxCBY-_/database/videos/new-fios.mp4
-
-- number: 10
-  name: Now Playing
-  abbr: ITV
-  backgroundAudio: http://radio.plaza.one/mp3
-  backgroundAudioOptions:
-    nowPlayingUrl: https://api.plaza.one/status
-    nowPlayingProvider: plaza-one # Required if using nowPlayingUrl. Only a few providers are supported right now; see the documentation for more info.
-  iframe:
-   src: https://ourworldoftext.com/nowplaying
-  
-- number: 11
-  name: Our World Of Text
-  title: OWOT Spawn
-  abbr: OWOT
-  backgroundAudio: http://radio.plaza.one/mp3
-  backgroundAudioOptions:
-    nowPlayingUrl: https://api.plaza.one/status
-    nowPlayingProvider: plaza-one 
-  iframe:
-   src: https://ourworldoftext.com/
-
-- number: 12
-  name: Bee Sting
-  title: Bee Sting Programming
-  description: elephant hit
-  youtube-playlist:
-    src: PLj6qdykhRWPlZ1aYt7ugMDfYXIANfV2gU
-    shuffle: true
-  themeOptions:
-    satellite: TV2
-
-
-- number: 13
-  name: Webchnl
-  abbr: CHNL
-  iframe:
-    src: https://webchnl.com/chnltv/
-    allowInteraction: true
-
-- number: 14
-  name: WokeTV
-  abbr: WT
-  iframe:
-    src: https://cmd-hue.github.io/woketv/
-    allowInteraction: true
-
-- number: 15
-  name: EAS
-  abbr: EAS
-  backgroundAudio: https://api.cors.lol/?url=https://radio.wjonip.org/WJONTV
-  image: https://file.garden/aUYIWVAKvQxCBY-_/database/photos/workingtv.png
-
-- number: 16
-  name: AIRBENZ TV
-  abbr: ABTV
-  video: https://live20.bozztv.com/giatv/giatv-AIRBENZTV/AIRBENZTV/playlist.m3u8
-
-- number: 17
-  name: Live
-  title: Live
-  abbr: LIVE
-  video: 
-    src: https://live20.bozztv.com/akamaissh101/ssh101/tvseagate/chunks.m3u8
-    aspectRatioBehavior: stretch
-
-- number: 18
-  name: Quant/Spark
-  title: Quant/Spark
-  abbr: QNTSP
-  video:
-    src: https://rhine.webchnl.live/memfs/daad2183-472a-4a6f-ac37-a2934dfccac4.m3u8
-    aspectRatioBehavior: stretch
-
-- number: 19
-  name: Service Announcements
-  abbr: SV
-  character-generator:
-    src: https://tvseagate.github.io/bulletin.json
-
-- number: 20
   name: TV36
   abbr: TV36
   iframe:
     src: https://tv36.pages.dev
     allowInteraction: true
 
-- number: 21
+- number: 3
   name: TV25
   abbr: TV25
   iframe:
